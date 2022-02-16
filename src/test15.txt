@@ -1,0 +1,11 @@
+let rec fact n =
+  let rec kfact n k =
+    if n
+    then 
+      kfact (n - 1) (fun res -> 
+        k (n * res))
+    else k 1
+  in 
+  kfact n (fun x -> x)
+in
+fact 8

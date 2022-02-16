@@ -1,0 +1,12 @@
+let rec gt x y =
+  if x then 
+    if y then gt (x - 1) (y - 1)
+    else 1
+  else 0
+in
+let rec mccarthy n =
+  if gt n 100
+  then n - 10
+  else mccarthy (mccarthy (n + 11))
+in
+mccarthy 45

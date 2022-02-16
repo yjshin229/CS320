@@ -1,0 +1,12 @@
+let x =
+  let x = 12 - 0 in
+  let _ = trace x in
+  let y = 32 - 0 in
+  let _ = trace y in
+  x
+in
+let x =
+  if x
+  then trace 99
+  else trace 13
+in x

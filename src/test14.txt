@@ -1,0 +1,10 @@
+let rec iter n f g =
+  if n
+  then f (iter (n - 1) f g)
+  else g n
+in
+let rec double x = 
+  let _ = trace x in
+  x + x
+in
+iter 10 double (fun _ -> 2)

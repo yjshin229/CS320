@@ -1,0 +1,7 @@
+let rec fibo n =
+  let rec aux n x y =
+    if n
+    then aux (n - 1) y (x + y)
+    else x
+  in aux n 0 1
+in fibo 10

@@ -1,0 +1,21 @@
+let rec fibo n =
+  let rec eq x y =
+    if x then
+      if y then eq (x - 1) (y - 1) else 0 
+    else
+      if y then 0 else 1
+  in
+  let rec kfibo n k =
+    if n
+    then
+      if eq n 1
+      then k 1
+      else
+        kfibo (n - 1) (fun res1 ->
+          kfibo (n - 2) (fun res2 ->
+            k (res1 + res2)))
+    else k 0
+  in
+  kfibo n (fun x -> x)
+in
+fibo 10

@@ -1,0 +1,11 @@
+let rec eq x y =
+  if x then
+    if y then eq (x - 1) (y - 1) else 0 
+  else
+    if y then 0 else 1
+in
+let _ = trace (eq 10 10) in
+let _ = trace (eq 1 (2 - 1)) in
+let _ = trace (eq 9 (3 * 3)) in
+let _ = trace (eq (25 / 5) (25 / 6)) in
+()

@@ -1,0 +1,41 @@
+let rec is_prime n =
+  let rec rem x y =
+    let q = x / y in
+    x - (q * y)
+  in
+  let rec gt x y =
+    if x then 
+      if y then gt (x - 1) (y - 1)
+      else 1
+    else 0
+  in
+  let rec eq x y =
+    if x then
+      if y then eq (x - 1) (y - 1) else 0 
+    else
+      if y then 0 else 1
+  in
+  let rec loop i =
+    if gt (n + 1) (i * i)
+    then
+      if eq (rem n i) 0
+      then 
+        if eq n i
+        then loop (i + 1)
+        else 0
+      else loop (i + 1)
+    else 1
+  in
+  loop 2
+in
+let rec loop n =
+  if n
+  then 
+    let _ = 
+      if is_prime n
+      then trace n
+      else () 
+    in loop (n - 1)
+  else ()
+in
+loop 100

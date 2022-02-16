@@ -1,0 +1,28 @@
+
+let rec zero f x = x
+in
+let rec succ n f x = f (n f x)
+in
+let rec church_to_nat n = 
+  let rec add1 n = n + 1 in
+  n add1 0
+in
+let rec nat_to_church n =
+  if n
+  then succ (nat_to_church (n - 1))
+  else zero
+in
+let rec pow n m f x = m n f x
+in
+let two = nat_to_church 2
+in
+let rec loop n =
+  if 15 - (n + 1)
+  then
+    let num = nat_to_church n in
+    let num = pow two num in
+    let _ = trace (church_to_nat num) in
+    loop (n + 1)
+  else ()
+in
+loop 0

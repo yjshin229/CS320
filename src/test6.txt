@@ -1,0 +1,9 @@
+let x = 23 in
+let y = 5 in
+let x = x / y in
+let _ = trace x in
+let x = x / y in
+let _ = trace x in
+if x
+then 4
+else 0 - 0

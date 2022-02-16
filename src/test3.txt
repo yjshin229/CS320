@@ -1,0 +1,10 @@
+let x =
+  let x = 0 in
+  let y = 1 in
+  x
+in
+let x =
+  if x
+  then 123
+  else 312
+in x

@@ -1,0 +1,7 @@
+let rec loop n =
+  if n
+  then 
+    let _ = trace n in
+    loop (n - 2)
+  else ()
+in loop 34
