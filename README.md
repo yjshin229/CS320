@@ -10,5 +10,5 @@ Final project for my Concepts of Programming Languages class at BU (CS 320 - Fal
 
 Download the part1(1).ml and install Ocaml from https://ocaml.org/docs/install.html. For MACOS or Linux users, ocaml can be installed through homebrew as well.
 
-Test cases for part1(1).ml are in the src file.
+Test cases for part1(1).ml are in the src file. <br />
 The output for each test cases are in the res file. The format of the result will be (output, log). i.e)("Error", []), (int,[]), ((),[]). Elements in [] are the remaining elements in the stack. 
