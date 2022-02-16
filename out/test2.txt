@@ -1,0 +1,19 @@
+Begin
+Push x
+Begin
+Push x
+Push 133
+Let
+Begin
+Push y
+Push 21
+Let
+Push y
+Lookup
+End
+End
+Let
+Push x
+Lookup
+End
+

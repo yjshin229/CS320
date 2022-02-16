@@ -1,0 +1,108 @@
+Begin
+Push eq
+Fun eq x
+Fun _ y
+Push x
+Lookup
+If
+Begin
+Push y
+Lookup
+If
+Begin
+Push eq
+Lookup
+Push x
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Push 1
+Sub
+Call
+End
+Else
+Begin
+Push 0
+End
+End
+End
+Else
+Begin
+Push y
+Lookup
+If
+Begin
+Push 0
+End
+Else
+Begin
+Push 1
+End
+End
+End
+End
+End
+Push _
+Lookup
+End
+Push eq
+Lookup
+Let
+Begin
+Push _
+Push eq
+Lookup
+Push 10
+Call
+Push 10
+Call
+Trace
+Let
+Begin
+Push _
+Push eq
+Lookup
+Push 1
+Call
+Push 2
+Push 1
+Sub
+Call
+Trace
+Let
+Begin
+Push _
+Push eq
+Lookup
+Push 9
+Call
+Push 3
+Push 3
+Mul
+Call
+Trace
+Let
+Begin
+Push _
+Push eq
+Lookup
+Push 25
+Push 5
+Div
+Call
+Push 25
+Push 6
+Div
+Call
+Trace
+Let
+Push ()
+End
+End
+End
+End
+End
+

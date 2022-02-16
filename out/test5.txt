@@ -1,0 +1,54 @@
+Begin
+Push x
+Begin
+Push x
+Push 12
+Push 0
+Sub
+Let
+Begin
+Push _
+Push x
+Lookup
+Trace
+Let
+Begin
+Push y
+Push 32
+Push 0
+Sub
+Let
+Begin
+Push _
+Push y
+Lookup
+Trace
+Let
+Push x
+Lookup
+End
+End
+End
+End
+Let
+Begin
+Push x
+Push x
+Lookup
+If
+Begin
+Push 99
+Trace
+End
+Else
+Begin
+Push 13
+Trace
+End
+End
+Let
+Push x
+Lookup
+End
+End
+

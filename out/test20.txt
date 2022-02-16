@@ -1,0 +1,201 @@
+Begin
+Push zero
+Fun zero f
+Fun _ x
+Push x
+Lookup
+End
+Push _
+Lookup
+End
+Push zero
+Lookup
+Let
+Begin
+Push succ
+Fun succ n
+Fun _ f
+Fun _ x
+Push f
+Lookup
+Push n
+Lookup
+Push f
+Lookup
+Call
+Push x
+Lookup
+Call
+Call
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push succ
+Lookup
+Let
+Begin
+Push church_to_nat
+Fun church_to_nat n
+Begin
+Push add1
+Fun add1 n
+Push n
+Lookup
+Push 1
+Add
+End
+Push add1
+Lookup
+Let
+Push n
+Lookup
+Push add1
+Lookup
+Call
+Push 0
+Call
+End
+End
+Push church_to_nat
+Lookup
+Let
+Begin
+Push nat_to_church
+Fun nat_to_church n
+Push n
+Lookup
+If
+Begin
+Push succ
+Lookup
+Push nat_to_church
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Call
+End
+Else
+Begin
+Push zero
+Lookup
+End
+End
+End
+Push nat_to_church
+Lookup
+Let
+Begin
+Push pow
+Fun pow n
+Fun _ m
+Fun _ f
+Fun _ x
+Push m
+Lookup
+Push n
+Lookup
+Call
+Push f
+Lookup
+Call
+Push x
+Lookup
+Call
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push pow
+Lookup
+Let
+Begin
+Push two
+Push nat_to_church
+Lookup
+Push 2
+Call
+Let
+Begin
+Push loop
+Fun loop n
+Push 15
+Push n
+Lookup
+Push 1
+Add
+Sub
+If
+Begin
+Begin
+Push num
+Push nat_to_church
+Lookup
+Push n
+Lookup
+Call
+Let
+Begin
+Push num
+Push pow
+Lookup
+Push two
+Lookup
+Call
+Push num
+Lookup
+Call
+Let
+Begin
+Push _
+Push church_to_nat
+Lookup
+Push num
+Lookup
+Call
+Trace
+Let
+Push loop
+Lookup
+Push n
+Lookup
+Push 1
+Add
+Call
+End
+End
+End
+End
+Else
+Begin
+Push ()
+End
+End
+End
+Push loop
+Lookup
+Let
+Push loop
+Lookup
+Push 0
+Call
+End
+End
+End
+End
+End
+End
+End
+

@@ -1,0 +1,70 @@
+Begin
+Push fact
+Fun fact n
+Begin
+Push kfact
+Fun kfact n
+Fun _ k
+Push n
+Lookup
+If
+Begin
+Push kfact
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Fun _ res
+Push k
+Lookup
+Push n
+Lookup
+Push res
+Lookup
+Mul
+Call
+End
+Push _
+Lookup
+Call
+End
+Else
+Begin
+Push k
+Lookup
+Push 1
+Call
+End
+End
+End
+Push _
+Lookup
+End
+Push kfact
+Lookup
+Let
+Push kfact
+Lookup
+Push n
+Lookup
+Call
+Fun _ x
+Push x
+Lookup
+End
+Push _
+Lookup
+Call
+End
+End
+Push fact
+Lookup
+Let
+Push fact
+Lookup
+Push 8
+Call
+End
+

@@ -1,0 +1,80 @@
+Begin
+Push iter
+Fun iter n
+Fun _ f
+Fun _ g
+Push n
+Lookup
+If
+Begin
+Push f
+Lookup
+Push iter
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Push f
+Lookup
+Call
+Push g
+Lookup
+Call
+Call
+End
+Else
+Begin
+Push g
+Lookup
+Push n
+Lookup
+Call
+End
+End
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push iter
+Lookup
+Let
+Begin
+Push double
+Fun double x
+Begin
+Push _
+Push x
+Lookup
+Trace
+Let
+Push x
+Lookup
+Push x
+Lookup
+Add
+End
+End
+Push double
+Lookup
+Let
+Push iter
+Lookup
+Push 10
+Call
+Push double
+Lookup
+Call
+Fun _ _
+Push 2
+End
+Push _
+Lookup
+Call
+End
+End
+

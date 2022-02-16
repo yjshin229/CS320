@@ -1,0 +1,65 @@
+Begin
+Push fibo
+Fun fibo n
+Begin
+Push aux
+Fun aux n
+Fun _ x
+Fun _ y
+Push n
+Lookup
+If
+Begin
+Push aux
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Call
+Push x
+Lookup
+Push y
+Lookup
+Add
+Call
+End
+Else
+Begin
+Push x
+Lookup
+End
+End
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push aux
+Lookup
+Let
+Push aux
+Lookup
+Push n
+Lookup
+Call
+Push 0
+Call
+Push 1
+Call
+End
+End
+Push fibo
+Lookup
+Let
+Push fibo
+Lookup
+Push 10
+Call
+End
+

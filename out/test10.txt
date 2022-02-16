@@ -1,0 +1,112 @@
+Begin
+Push fibo
+Fun fibo n
+Begin
+Push eq
+Fun eq x
+Fun _ y
+Push x
+Lookup
+If
+Begin
+Push y
+Lookup
+If
+Begin
+Push eq
+Lookup
+Push x
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Push 1
+Sub
+Call
+End
+Else
+Begin
+Push 0
+End
+End
+End
+Else
+Begin
+Push y
+Lookup
+If
+Begin
+Push 0
+End
+Else
+Begin
+Push 1
+End
+End
+End
+End
+End
+Push _
+Lookup
+End
+Push eq
+Lookup
+Let
+Push eq
+Lookup
+Push n
+Lookup
+Call
+Push 0
+Call
+If
+Begin
+Push 0
+End
+Else
+Begin
+Push eq
+Lookup
+Push n
+Lookup
+Call
+Push 1
+Call
+If
+Begin
+Push 1
+End
+Else
+Begin
+Push fibo
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Push fibo
+Lookup
+Push n
+Lookup
+Push 2
+Sub
+Call
+Add
+End
+End
+End
+End
+End
+End
+Push fibo
+Lookup
+Let
+Push fibo
+Lookup
+Push 10
+Call
+End
+

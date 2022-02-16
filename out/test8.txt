@@ -1,0 +1,33 @@
+Begin
+Push fact
+Fun fact n
+Push n
+Lookup
+If
+Begin
+Push n
+Lookup
+Push fact
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Mul
+End
+Else
+Begin
+Push 1
+End
+End
+End
+Push fact
+Lookup
+Let
+Push fact
+Lookup
+Push 8
+Call
+End
+

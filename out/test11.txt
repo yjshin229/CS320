@@ -1,0 +1,56 @@
+Begin
+Push fact
+Fun fact n
+Begin
+Push aux
+Fun aux n
+Fun _ acc
+Push n
+Lookup
+If
+Begin
+Push aux
+Lookup
+Push n
+Lookup
+Push 1
+Sub
+Call
+Push acc
+Lookup
+Push n
+Lookup
+Mul
+Call
+End
+Else
+Begin
+Push acc
+Lookup
+End
+End
+End
+Push _
+Lookup
+End
+Push aux
+Lookup
+Let
+Push aux
+Lookup
+Push n
+Lookup
+Call
+Push 1
+Call
+End
+End
+Push fact
+Lookup
+Let
+Push fact
+Lookup
+Push 8
+Call
+End
+

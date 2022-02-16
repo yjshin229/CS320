@@ -1,0 +1,16 @@
+Begin
+Push x
+Push 20
+Let
+Begin
+Push y
+Push 23
+Let
+Push x
+Lookup
+Push y
+Lookup
+Add
+End
+End
+

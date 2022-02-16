@@ -1,0 +1,37 @@
+Begin
+Push loop
+Fun loop n
+Push n
+Lookup
+If
+Begin
+Begin
+Push _
+Push n
+Lookup
+Trace
+Let
+Push loop
+Lookup
+Push n
+Lookup
+Push 2
+Sub
+Call
+End
+End
+Else
+Begin
+Push ()
+End
+End
+End
+Push loop
+Lookup
+Let
+Push loop
+Lookup
+Push 34
+Call
+End
+

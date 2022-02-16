@@ -1,0 +1,34 @@
+Begin
+Push x
+Begin
+Push x
+Push 0
+Let
+Begin
+Push y
+Push 1
+Let
+Push x
+Lookup
+End
+End
+Let
+Begin
+Push x
+Push x
+Lookup
+If
+Begin
+Push 123
+End
+Else
+Begin
+Push 312
+End
+End
+Let
+Push x
+Lookup
+End
+End
+

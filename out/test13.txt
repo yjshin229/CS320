@@ -1,0 +1,85 @@
+Begin
+Push gt
+Fun gt x
+Fun _ y
+Push x
+Lookup
+If
+Begin
+Push y
+Lookup
+If
+Begin
+Push gt
+Lookup
+Push x
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Push 1
+Sub
+Call
+End
+Else
+Begin
+Push 1
+End
+End
+End
+Else
+Begin
+Push 0
+End
+End
+End
+Push _
+Lookup
+End
+Push gt
+Lookup
+Let
+Begin
+Push mccarthy
+Fun mccarthy n
+Push gt
+Lookup
+Push n
+Lookup
+Call
+Push 100
+Call
+If
+Begin
+Push n
+Lookup
+Push 10
+Sub
+End
+Else
+Begin
+Push mccarthy
+Lookup
+Push mccarthy
+Lookup
+Push n
+Lookup
+Push 11
+Add
+Call
+Call
+End
+End
+End
+Push mccarthy
+Lookup
+Let
+Push mccarthy
+Lookup
+Push 45
+Call
+End
+End
+

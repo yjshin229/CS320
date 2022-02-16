@@ -1,0 +1,38 @@
+Begin
+Push x
+Begin
+Push x
+Push 34
+Push 0
+Sub
+Let
+Begin
+Push y
+Push 45
+Push 0
+Sub
+Let
+Push x
+Lookup
+End
+End
+Let
+Begin
+Push x
+Push x
+Lookup
+If
+Begin
+Push 23
+End
+Else
+Begin
+Push 31
+End
+End
+Let
+Push x
+Lookup
+End
+End
+

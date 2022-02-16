@@ -1,0 +1,246 @@
+Begin
+Push eq
+Fun eq x
+Fun _ y
+Push x
+Lookup
+If
+Begin
+Push y
+Lookup
+If
+Begin
+Push eq
+Lookup
+Push x
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Push 1
+Sub
+Call
+End
+Else
+Begin
+Push 0
+End
+End
+End
+Else
+Begin
+Push y
+Lookup
+If
+Begin
+Push 0
+End
+Else
+Begin
+Push 1
+End
+End
+End
+End
+End
+Push _
+Lookup
+End
+Push eq
+Lookup
+Let
+Begin
+Push gt
+Fun gt x
+Fun _ y
+Push x
+Lookup
+If
+Begin
+Push y
+Lookup
+If
+Begin
+Push gt
+Lookup
+Push x
+Lookup
+Push 1
+Sub
+Call
+Push y
+Lookup
+Push 1
+Sub
+Call
+End
+Else
+Begin
+Push 1
+End
+End
+End
+Else
+Begin
+Push 0
+End
+End
+End
+Push _
+Lookup
+End
+Push gt
+Lookup
+Let
+Begin
+Push bsearch
+Fun bsearch n
+Fun _ i
+Fun _ j
+Begin
+Push k
+Push i
+Lookup
+Push j
+Lookup
+Add
+Push 2
+Div
+Let
+Begin
+Push _
+Push k
+Lookup
+Trace
+Let
+Push gt
+Lookup
+Push i
+Lookup
+Call
+Push j
+Lookup
+Call
+If
+Begin
+Push k
+Lookup
+End
+Else
+Begin
+Begin
+Push sq
+Push k
+Lookup
+Push k
+Lookup
+Mul
+Let
+Push eq
+Lookup
+Push sq
+Lookup
+Call
+Push n
+Lookup
+Call
+If
+Begin
+Push k
+Lookup
+End
+Else
+Begin
+Push gt
+Lookup
+Push n
+Lookup
+Call
+Push sq
+Lookup
+Call
+If
+Begin
+Push bsearch
+Lookup
+Push n
+Lookup
+Call
+Push k
+Lookup
+Push 1
+Add
+Call
+Push j
+Lookup
+Call
+End
+Else
+Begin
+Push bsearch
+Lookup
+Push n
+Lookup
+Call
+Push i
+Lookup
+Call
+Push k
+Lookup
+Push 1
+Sub
+Call
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+Push _
+Lookup
+End
+Push _
+Lookup
+End
+Push bsearch
+Lookup
+Let
+Begin
+Push sqrt
+Fun sqrt n
+Push bsearch
+Lookup
+Push n
+Lookup
+Call
+Push 0
+Call
+Push n
+Lookup
+Call
+End
+Push sqrt
+Lookup
+Let
+Begin
+Push sq
+Push 169
+Let
+Push sqrt
+Lookup
+Push sq
+Lookup
+Call
+Trace
+End
+End
+End
+End
+End
+
